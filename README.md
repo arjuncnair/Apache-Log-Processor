@@ -49,5 +49,4 @@ Example:
     * Option 0 | Exit
 
 ## Sample Output
-![Image of HostList]
-(https://raw.githubusercontent.com/arjuncnair/Apache-Log-Processor/main/HostList.png)
+Please refer the screenshots uploaded in this repo.
