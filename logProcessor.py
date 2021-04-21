@@ -1,13 +1,3 @@
-#1. Top 10 requested pages and the number of requests made for each --- Done
-#2. Percentage of successful requests (anything in the 200s and 300s range) -- Done
-#3. Percentage of unsuccessful requests (anything that is not in the 200s or 300s range) - Done
-#4. Top 10 unsuccessful page requests - Done
-#5. The top 10 hosts making the most requests, displaying the IP address and number of requests made. - Done
-#6. Option parsing to produce only the report for one of the previous points (e.g. only the top 10 urls, only the percentage of successful requests and so on)
-#7. A README file explaining how to use the tool, what its dependencies and any assumptions you made while writing it
-
-#Common Function that is used for decoding DataList, (Top 10 Pages, Top 10 Hosts, etc)
-
 import os, sys
 from collections import Counter,OrderedDict
 
@@ -141,13 +131,13 @@ def logProcessorMain(errorLogFileName):
 
     except IOError as e:
         print "Error Opening File", e
-#    except Exception as se:
-#        print "Error Occured:", se
     except IndexError as ie:
         print "\n[ERROR]: The script requires one argument (AccessLog) to work. Please pass Access Log as only argument.\n"
         print "Usage: \n\tpython",sys.argv[0],"<Path>/<Log File Name>\n"
         print "Example:"
         print "\tpython",sys.argv[0],"access.log"
         print "\tpython",sys.argv[0],"/home/ubuntu/access-1.log\n"
+    except Exception as se:
+        print "Error Occured:", se    
         
 logProcessorMain(errorLogFileName)
