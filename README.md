@@ -51,4 +51,4 @@ Example:
 ## Sample Output
 ![Image of AllPages]
 
-(https://github.com/arjuncnair/Apache-Log-Processor/blob/main/HostList.png?raw=true)
+(https://raw.githubusercontent.com/arjuncnair/Apache-Log-Processor/main/HostList.png)
